@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.pipeworx-io/nyc-animals",
+  "title": "Nyc Animals",
+  "description": "NYC Animals MCP — dog licensing and dog-bite records for New York City",
+  "version": "0.1.0",
+  "websiteUrl": "https://pipeworx.io/packs/nyc-animals",
+  "repository": {
+    "url": "https://github.com/pipeworx-io/mcp-nyc-animals",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gateway.pipeworx.io/nyc-animals/mcp"
+    }
+  ]
+}
