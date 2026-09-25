@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/nyc-animals",
   "title": "Nyc Animals",
   "description": "NYC Animals MCP — dog licensing and dog-bite records for New York City",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/nyc-animals",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-nyc-animals",
