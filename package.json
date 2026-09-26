@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-nyc-animals",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "NYC Animals MCP — dog licensing and dog-bite records for New York City",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-c348bb1c562991c89145be6ac681c16c63e4af3bd4a7379ad9f5e22741c8bb91",
-    "sourceCommit": "adb69d997f82a62e8e22b594488c7d04a227db35"
+    "sourceHash": "v1-23cbd9cac01d34c7979abccf877580e6311f93ef9e8dc6529b9381468e965602",
+    "sourceCommit": "97740c6ee04c8acbfe7dddcacfde9e88ff2b9ca0"
   }
 }
