@@ -1,7 +1,7 @@
 {
   "name": "@pipeworx/mcp-nyc-animals",
-  "version": "0.1.2",
-  "description": "NYC Animals MCP — dog licensing and dog-bite records for New York City",
+  "version": "0.1.3",
+  "description": "NYC Animals MCP — dog licensing and dog-bite records for New York City (data.cityofnewyork.us, Socrata SODA API).",
   "type": "module",
   "main": "src/index.ts",
   "types": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-23cbd9cac01d34c7979abccf877580e6311f93ef9e8dc6529b9381468e965602",
-    "sourceCommit": "97740c6ee04c8acbfe7dddcacfde9e88ff2b9ca0"
+    "sourceHash": "v1-f6cd2c8e9a43a3408fd125f5ef5f35d5f964f8a01e39fd25ea8d4c27cefbd631",
+    "sourceCommit": "774de7f685a75e02d0b828d24a7b94794102152c"
   }
 }
