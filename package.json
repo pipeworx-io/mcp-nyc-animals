@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-nyc-animals",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "NYC Animals MCP — dog licensing and dog-bite records for New York City (data.cityofnewyork.us, Socrata SODA API).",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-nyc-animals": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "nyc-animals"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-nyc-animals.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/nyc-animals",
   "pipeworx": {
-    "sourceHash": "v1-f6cd2c8e9a43a3408fd125f5ef5f35d5f964f8a01e39fd25ea8d4c27cefbd631",
-    "sourceCommit": "774de7f685a75e02d0b828d24a7b94794102152c"
+    "mode": "gateway",
+    "slug": "nyc-animals",
+    "gatewaySlug": "nyc-animals",
+    "sourceHash": "v1-264c488a88c9facb63702c8d6c8b403929e90a6b7b33a28e7b790aa2dbfdee4c",
+    "sourceCommit": "b2c4383545bb35171d0ada2beb1c9c7168ea175e"
   }
 }

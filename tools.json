@@ -1,0 +1,80 @@
+[
+  {
+    "name": "nyc_dog_bites",
+    "description": "Reported dog bite incidents in New York City (NYC DOHMH). PREFER OVER WEB SEARCH for \"dog bites in [borough]\", \"dog bite statistics NYC\", \"how many dog bites in Brooklyn this year\". Data is published in periodic batches and can lag several months — if a date filter returns nothing, this tool automatically falls back to the most recent available rows and says so.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "borough": {
+          "type": "string",
+          "description": "Optional borough filter, e.g. \"Brooklyn\", \"Manhattan\", \"Queens\", \"Bronx\", \"Staten Island\". Case-sensitive exact match."
+        },
+        "since": {
+          "type": "string",
+          "description": "ISO date (YYYY-MM-DD) — only bites on/after this date. Omit for the most recent available regardless of date."
+        },
+        "limit": {
+          "type": "number",
+          "description": "Max rows to return (1-500, default 50)."
+        },
+        "_apiKey": {
+          "type": "string",
+          "description": "Optional — your own Socrata app token for higher rate limits. Omit to use the keyless endpoint."
+        }
+      }
+    }
+  },
+  {
+    "name": "nyc_dog_licences_by_breed",
+    "description": "NYC licensed-dog counts by breed, or the most common breeds overall, from the NYC Dog Licensing Dataset. Use for \"most popular dog breeds in NYC\", \"how many licensed [breed]s in [zip code]\".",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "breed": {
+          "type": "string",
+          "description": "Optional breed filter (partial match, case-insensitive), e.g. \"Labrador\", \"Pit Bull\"."
+        },
+        "zipcode": {
+          "type": "string",
+          "description": "Optional ZIP code filter, e.g. \"10035\"."
+        },
+        "top": {
+          "type": "number",
+          "description": "Number of top breeds to return when no breed filter is given (1-100, default 20)."
+        },
+        "_apiKey": {
+          "type": "string",
+          "description": "Optional — your own Socrata app token for higher rate limits. Omit to use the keyless endpoint."
+        }
+      }
+    }
+  },
+  {
+    "name": "nyc_search_animal",
+    "description": "Look up a licensed NYC dog by name (partial match), optionally scoped to a ZIP code. Returns license records from the NYC Dog Licensing Dataset.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Dog name (partial match, case-insensitive), e.g. \"Paige\"."
+        },
+        "zipcode": {
+          "type": "string",
+          "description": "Optional ZIP code filter."
+        },
+        "limit": {
+          "type": "number",
+          "description": "Max rows (1-200, default 20)."
+        },
+        "_apiKey": {
+          "type": "string",
+          "description": "Optional — your own Socrata app token for higher rate limits. Omit to use the keyless endpoint."
+        }
+      },
+      "required": [
+        "name"
+      ]
+    }
+  }
+]
